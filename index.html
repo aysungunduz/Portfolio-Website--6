@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-a.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>Aysun Gunduz</span> <br> From Turkey</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------ABOUT--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jfif" alt="about">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis dolorem quidem perferendis
+                        veniam commodi facilis quasi, aliquid enim officia eos sint ut laborum fugit tenetur ducimus ea
+                        pariatur nobis accusamus eligendi magni, neque nisi consectetur! Cupiditate, harum nulla.
+                        Officia voluptatem voluptatum dolorem quas maxime optio omnis, sequi inventore. Optio, similique
+                        deserunt aut corrupti id assumenda obcaecati ea nisi officiis accusamus asperiores maxime
+                        eligendi nihil in? Dicta laboriosam a iusto perspiciatis qui optio beatae pariatur corporis
+                        dolore quasi? Labore, consequatur sit!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development</span><br>HTML<br>CSS<br>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Buyer & Scheduler at People Media Agency</li>
+                            <li><span>2017 - 2021</span><br>Self-Improvement Instructor</li>
+                            <li><span>2019 - 2020</span><br>Executive Assistant at Bekon Textile</li>
+                            <li><span>2018</span><br>Purchasing/Accounting Assistant</li>
+                            <li><span>2015 - 2017</span><br>Sales/Operation Internship at Yapikredi Bank</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2013 - 2017</span><br>Business Administration at Istanbul University</li>
+                            <li><span>2015 - 2017</span><br>Public Relations and Advertising at Istanbul University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------SERVICES--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Desing</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi quasi tempore, qui
+                        placeat eveniet nobis rerum blanditiis. Expedita, aliquam!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Desing</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi quasi tempore, qui
+                        placeat eveniet nobis rerum blanditiis. Expedita, aliquam!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------PORTFOLIO--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Dictionary App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vero quos minima, ipsum
+                            exercitationem quo!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="work2">
+                    <div class="layer">
+                        <h3>Rocket Animation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vero quos minima, ipsum
+                            exercitationem quo!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="work3">
+                    <div class="layer">
+                        <h3>Calendar App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vero quos minima, ipsum
+                            exercitationem quo!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------CONTACT--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/minnikbayann"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aysun-g%C3%BCnd%C3%BCz-19b636137/"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with <i class="fas fa-heart"></i> by Aysun Gunduz</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
